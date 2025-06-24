@@ -7,22 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
+    <div id="intro-screen">
+        <h1>Bubble-Blast</h1>
+        <button id="st-btn">Start game</button>
+        <p>Made with ❤️ by - Riya Shukla</p>
+    </div>
+    <div id="level-screen">
+        <h2>Select Level</h2>
+        <div class="level-btns">
+            <button class="level" data-time="60">Easy</button>
+            <button class="level" data-time="45">Medium</button>
+            <button class="level" data-time="30">Hard</button>
+        </div>
+    </div>
     <div id="fullscreen">
         <div id="panel">
             <div id="panel-top">
                 <div class="elem">
-                    <h3>Hit</h3>
+                    <h3>HIT</h3>
                     <div class="hitval" id="box"></div>
                 </div>
                 <div class="elem">
-                    <h3>Timer</h3>
+                    <h3>TIMER</h3>
                     <div class="timerval" id="box">60</div>
                 </div>
                 <div class="elem">
-                    <h3>Score</h3>
+                    <h3>SCORE</h3>
                     <div class="scoreval" id="box">0</div>
                 </div>
             </div>
