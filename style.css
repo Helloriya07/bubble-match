@@ -11,20 +11,129 @@ html {
     width: 100%;
 }
 
+#intro-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #50ac05, #014118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+#intro-screen h1 {
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: rgb(8, 8, 180);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#intro-screen p {
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #023615;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#st-btn {
+    background: #016d28;
+    color: #000;
+    text-transform: capitalize;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(4, 163, 62, 0.3);
+}
+
+#st-btn:hover {
+    background: #038431;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#level-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #08fa89; */
+    background: linear-gradient(135deg, #6ae406, #04a33e);
+    color: rgb(2, 54, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transition: opacity 0.5s ease;
+}
+
+#level-screen h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    color: rgb(4, 4, 150);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.level {
+    background: #04a33e;
+    color: #000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(4, 163, 62, 0.3);
+}
+
+.level:hover {
+    background: #038431;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.level-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 #fullscreen {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: rgb(90, 180, 90);
+
+    background: linear-gradient(155deg, #05c575, #02a03c);
+    /* background-color: rgb(90, 180, 90); */
 
 }
 
 #panel {
     height: 80%;
     width: 80%;
-    background-color: #fff;
+
+    background: linear-gradient(185deg, #fff, #04a33e);
     border-radius: 10px;
     overflow: hidden;
 
@@ -37,7 +146,7 @@ html {
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    background-color: rgb(5, 77, 5);
+    background: linear-gradient(185deg, #012b10, #02742c);
     display: flex;
     color: #fff;
 }
@@ -80,10 +189,49 @@ html {
     color: #fff;
     border-radius: 50%;
     font-weight: 500;
-
+    animation: float 4s ease-in-out infinite;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease;
 }
 
 .bubble:hover {
     cursor: pointer;
     background-color: red;
+    transform: scale(1.1);
+}
+
+.game-over-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.game-over-screen h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.game-over-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#restart-btn,
+#quit-btn {
+    background: #04a33e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#restart-btn:hover,
+#quit-btn:hover {
+    background-color: #038431;
 }
