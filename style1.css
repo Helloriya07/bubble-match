@@ -1,0 +1,105 @@
+/* Code to make game responsive */
+@media (max-width: 768px) {
+    #intro-screen h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #intro-screen p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #st-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    #level-screen h2 {
+        font-size: 2.2rem;
+    }
+
+    .level-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .level {
+        width: 80%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    #panel {
+        width: 95%;
+        height: 90%;
+    }
+
+    #panel-top {
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+        gap: 10px;
+    }
+
+    .elem {
+        justify-content: center;
+    }
+
+    #box {
+        font-size: 0.9rem;
+        padding: 6px 16px;
+    }
+
+    .bubble {
+        width: 50px;
+        height: 50px;
+        font-size: 0.95rem;
+    }
+
+    .game-over-screen h1 {
+        font-size: 2rem;
+    }
+
+    .game-over-screen p {
+        font-size: 1rem;
+    }
+
+    #restart-btn,
+    #quit-btn {
+        width: 80%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro-screen h1 {
+        font-size: 2.2rem;
+    }
+
+    #panel-top {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .bubble {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .level {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .game-over-screen h1 {
+        font-size: 1.8rem;
+    }
+
+    #restart-btn,
+    #quit-btn {
+        font-size: 0.9rem;
+    }
+}
