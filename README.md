@@ -3,7 +3,9 @@ A fun and simple browser-based game built using HTML, CSS, and JavaScript. In th
 
 # Features
 
- * Displays a "Hit" number that the player needs to find.
+* Start the game and choose difficulty level.
+* Easy , moderate and hard level.
+* Displays a "Hit" number that the player needs to find.
  * Bubbles with random numbers are generated on screen.
  * Click the correct bubble to earn +10 points.
  * Timer counts down — the game ends when time is up.
@@ -15,6 +17,7 @@ A fun and simple browser-based game built using HTML, CSS, and JavaScript. In th
 │
 ├── index.html      # Main HTML structure
 ├── style.css       # Styling for the game layout and bubbles
+├── style1.css       # handling the responsive code
 └── script.js       # Game logic, timer, scoring, and bubble interactions
 ```
 # Technologies Used
