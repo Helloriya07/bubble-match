@@ -124,6 +124,8 @@ function startGame(duration) {
     document.querySelector(".scoreval").textContent = score;
     document.querySelector(".timerval").textContent = timer;
 
+    alert("🎯 Game Instructions:\nClick on the number shown in the 'Hit' section as fast as you can!");
+
     // Show fullscreen
     document.getElementById("fullscreen").style.display = "flex";
 
